@@ -1,0 +1,27 @@
+//Utils
+@import './utils/mixins';
+@import './utils/variables';
+// @import './utils/animations';
+
+//Base
+@import './base/global';
+
+// //Components
+// @import '../../../components/appNav/appNav';
+// @import '../../../components/footer/footer';
+// @import '../../../components/header/header';
+// @import '../../../components/lodgingThumbnail/lodgingThumbnail';
+// @import '../../../components/dropdown/dropdown';
+// @import '../../../components/tag/tag';
+// @import '../../../components/gallery/gallery';
+// @import '../../../components/banner/banner';
+// @import '../../../components/starRating/starRating';
+
+// //Pages
+// @import '../../../pages/home/home';
+// @import '../../../pages/error/error';
+// @import '../../../pages/about/about';
+// @import '../../../pages/lodging/lodging';
+
+//loader
+@import '../../loader/loader';

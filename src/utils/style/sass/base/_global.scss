@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+//Utilisation de box-sizing
+*,
+*:after,
+*:before {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1440px;
+    min-height: 780px;
+    margin: auto;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
