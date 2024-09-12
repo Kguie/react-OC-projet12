@@ -8,7 +8,7 @@ export default function HeaderNav() {
         Profil
       </a>
       <a className="nav__link" href="/#">
-        Réglage
+        Réglages
       </a>
       <a className="nav__link" href="/#">
         Communauté

@@ -6,7 +6,10 @@
     &__main-wrapper {
         display: flex;
         flex-direction: column;
-        flex: 1;
-        padding: 70px 90px 90px 105px;
+        gap: 75px;
+        width: 79%;
+        padding: 70px 0 90px 15px;
+        margin: 0 auto;
     }
+
 }

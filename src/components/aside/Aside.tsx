@@ -3,7 +3,7 @@ import bike from "../../assets/icons/bike.svg";
 import swim from "../../assets/icons/swim.svg";
 import workout from "../../assets/icons/workout.svg";
 
-export default function DashboardAside() {
+export default function Aside() {
   const buttonsLabel = [yoga, swim, bike, workout];
   return (
     <aside className="aside">

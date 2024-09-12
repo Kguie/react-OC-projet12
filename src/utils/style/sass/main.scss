@@ -1,7 +1,7 @@
 //Utils
 @import './utils/mixins';
 @import './utils/variables';
-// @import './utils/animations';
+@import './utils/animations';
 
 //Base
 @import './base/global';
@@ -9,20 +9,18 @@
 // //Components
 @import '../../../components/header/headerNav/headerNav';
 @import '../../../components/header/header';
-@import '../../../components/dashboardAside/dashboardAside';
-// @import '../../../components/lodgingThumbnail/lodgingThumbnail';
-// @import '../../../components/dropdown/dropdown';
-// @import '../../../components/tag/tag';
-// @import '../../../components/gallery/gallery';
-// @import '../../../components/banner/banner';
-// @import '../../../components/starRating/starRating';
+@import '../../../components/aside/aside.scss';
+@import '../../../components/dashboardHead/dashboardHead';
+@import '../../../components/dashboardBody/dashboardDailyActivity/dashboardDailyActivity';
+@import '../../../components//dashboardBody/dashboardAside/dashboardAsideCard/dashboardAsideCard';
+@import '../../../components/dashboardBody/dashboardAside/dashboardAside';
+@import'../../../components/dashboardBody/dashboardActivityRadar/dashboardActivityRadar';
+@import '../../../components/dashboardBody/dashboardScore/dashboardScore';
+@import '../../../components/dashboardBody/dashboardUserActivity/dashboardUserActivity';
+@import '../../../components/dashboardBody/dashboardBody';
 
 // //Pages
-// @import '../../../pages/home/home';
-// @import '../../../pages/error/error';
-// @import '../../../pages/about/about';
-// @import '../../../pages/lodging/lodging';
 @import '../../../pages/dashboard/dashboard';
 
 //loader
-@import '../../loader/loader';
+@import '../../skeleton/skeleton';

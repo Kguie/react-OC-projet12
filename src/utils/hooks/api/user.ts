@@ -1,5 +1,11 @@
 import { useGet } from ".";
 
+export type DashboardUserProps = {
+  userData: UserProps | null;
+  isLoading: boolean;
+  error: string | null;
+};
+
 type UserProps = {
   id: number;
   userInfos: { firstName: string; lastName: string; age: number };

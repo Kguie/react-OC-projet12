@@ -1,0 +1,26 @@
+.dashboard-body {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex-basis: 74%;
+
+        &__charts-row {
+            display: flex;
+            justify-content: space-between;
+
+            section {
+                flex-basis: 31%;
+                display: flex;
+                aspect-ratio: 0.98;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+        }
+    }
+}

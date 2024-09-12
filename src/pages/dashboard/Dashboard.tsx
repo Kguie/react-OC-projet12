@@ -1,11 +1,16 @@
-import DashboardAside from "../../components/dashboardAside/DashboardAside";
+import Aside from "../../components/aside/Aside";
+import DashboardBody from "../../components/dashboardBody/DashboardBody";
+import DashboardHead from "../../components/dashboardHead/DashboardHead";
+import { useGetUser } from "../../utils/hooks/api/user";
 
 export default function Dashboard() {
+  const { data, isLoading, error } = useGetUser(12);
   return (
     <main className="dashboard">
-      <DashboardAside />
+      <Aside />
       <div className="dashboard__main-wrapper">
-        <p>Hello world</p>
+        <DashboardHead userData={data} isLoading={isLoading} error={error} />
+        <DashboardBody userData={data} isLoading={isLoading} error={error} />
       </div>
     </main>
   );

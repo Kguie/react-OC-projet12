@@ -1,0 +1,58 @@
+.daily-activity {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px 25px 25px 30px;
+    gap: 45px;
+    aspect-ratio: 2.6;
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__title {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #20253A;
+
+        }
+
+        &__keys {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            &--weight {
+                color: $clr-tertiary;
+            }
+
+            &--calories {
+                color: $clr-primary;
+            }
+
+            li {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                padding-left: 0;
+
+                span {
+                    color: #74798C;
+                }
+
+            }
+
+
+
+
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex: 1;
+    }
+}
