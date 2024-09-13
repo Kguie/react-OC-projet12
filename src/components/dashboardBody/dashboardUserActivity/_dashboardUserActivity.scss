@@ -1,1 +1,64 @@
-.dashboard-user-activity {}
+.dashboard-user-activity {
+    background-color: $clr-primary;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 35px;
+        flex-basis: 32%;
+    }
+
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0;
+        color: #ffffff;
+        opacity: .5;
+    }
+
+    &__line-chart {
+        width: 100%;
+        flex-basis: 57%;
+    }
+
+    &__days-row {
+        width: 88%;
+        flex-basis: 11%;
+        justify-content: space-between;
+        padding-top: 8px;
+        z-index: 1;
+        @include center-box;
+
+
+        &__day {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #ffffff;
+            opacity: .5;
+        }
+    }
+
+    &__filter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #000000;
+        opacity: .1;
+        z-index: 1;
+    }
+}
+
+.recharts-surface {
+    overflow: visible;
+}
