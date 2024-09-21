@@ -5,6 +5,7 @@ import { useGetUser } from "../../utils/hooks/api/user";
 
 export default function Dashboard() {
   const { data, isLoading, error } = useGetUser(12);
+
   return (
     <main className="dashboard">
       <Aside />

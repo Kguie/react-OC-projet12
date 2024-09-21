@@ -29,21 +29,28 @@ export default function DashboardAsideCard({ title, count }: Props) {
         return "";
     }
   }, [title]);
+
+  const CardContent: React.FC = () => {
+    const formattedCount = count
+      ? title === "Calories"
+        ? `${formatCaloriesCount(count)}kCal`
+        : `${count}g`
+      : null;
+    if (!count) {
+      <div className="dashboard-aside-card__body__count--skeleton">
+        <Skeleton />
+      </div>;
+    }
+    return (
+      <p className="dashboard-aside-card__body__count">{formattedCount}</p>
+    );
+  };
+
   return (
     <div className="dashboard-aside-card">
       <img className="dashboard-aside-card__head" src={icon} alt={title} />
       <div className="dashboard-aside-card__body">
-        {count ? (
-          <p className="dashboard-aside-card__body__count">
-            {title === "Calories"
-              ? `${formatCaloriesCount(count)}kCal`
-              : `${count}g`}
-          </p>
-        ) : (
-          <div className="dashboard-aside-card__body__count--skeleton">
-            <Skeleton />
-          </div>
-        )}
+        <CardContent />
         <p className="dashboard-aside-card__body__title">{title}</p>
       </div>
     </div>

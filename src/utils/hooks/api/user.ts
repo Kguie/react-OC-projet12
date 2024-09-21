@@ -6,7 +6,7 @@ export type DashboardUserProps = {
   error: string | null;
 };
 
-type UserProps = {
+export type UserProps = {
   id: number;
   userInfos: { firstName: string; lastName: string; age: number };
   todayScore: number;
@@ -18,17 +18,17 @@ type UserProps = {
   };
 };
 
-type UserActivityProps = {
+export type UserActivityProps = {
   userId: UserProps["id"];
   sessions: { day: string; kilogram: number; calories: number }[];
 };
 
-type UserAverageSessionsProps = {
+export type UserAverageSessionsProps = {
   userId: UserProps["id"];
   sessions: { day: number; sessionLength: number }[];
 };
 
-type UserPerformanceProps = {
+export type UserPerformanceProps = {
   userId: UserProps["id"];
   kind: {
     "1": string;

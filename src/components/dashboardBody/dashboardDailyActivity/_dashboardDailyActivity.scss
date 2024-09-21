@@ -54,5 +54,15 @@
     &__body {
         display: flex;
         flex: 1;
+
+        .recharts-surface {
+            overflow: visible;
+
+            tspan {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
     }
 }

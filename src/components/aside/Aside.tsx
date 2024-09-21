@@ -5,6 +5,7 @@ import workout from "../../assets/icons/workout.svg";
 
 export default function Aside() {
   const buttonsLabel = [yoga, swim, bike, workout];
+
   return (
     <aside className="aside">
       <div className="aside__buttons-wrapper">

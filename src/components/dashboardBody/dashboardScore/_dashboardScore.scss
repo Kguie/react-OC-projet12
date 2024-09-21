@@ -32,6 +32,23 @@
         height: 75px;
         margin: auto;
         text-align: center;
+        padding-top: 5%;
+
+        &__number {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 26px;
+            text-align: center;
+            color: $clr-tertiary;
+        }
+
+        &__legend {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: center;
+            color: $clr-secondary
+        }
 
     }
 }

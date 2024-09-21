@@ -1,0 +1,16 @@
+.daily-activity-tooltip {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 5px;
+    background-color: $clr-primary;
+
+    p {
+        font-size: 7px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #ffffff
+    }
+}
