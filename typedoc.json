@@ -1,0 +1,21 @@
+{
+    "entryPoints": [
+        "./src/**/*.tsx",
+        "./src/**/*.ts"
+    ],
+    "out": "docs",
+    "includeVersion": true,
+    "excludeExternals": true,
+    "exclude": [
+        "**/*.test.ts",
+        "**/*.spec.ts",
+        "**/*.test.tsx",
+        "**/*.spec.tsx",
+        "**/node_modules/**",
+        "./src/react-app-env.d.ts",
+        "./src/reportWebVitals.ts",
+        "./src/setupTests.ts",
+    ],
+    "excludePrivate": true,
+    "readme": "README.md", // Si vous avez un fichier README
+}

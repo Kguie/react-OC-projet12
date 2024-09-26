@@ -1,10 +1,13 @@
 import { DashboardUserProps } from "../../utils/hooks/api/user";
 
+/**
+ * Affiche la partie supérieur du tableau de bord
+ */
 export default function DashboardHead({
   userData: data,
   isLoading,
   error,
-}: DashboardUserProps) {
+}: DashboardUserProps): React.ReactElement {
   const isInfosAvailable = !isLoading && !error && data?.userInfos;
 
   const UserName: React.FC = () =>

@@ -3,7 +3,10 @@ import { useMemo } from "react";
 import { useGetUserActivity } from "../../../utils/hooks/api/user";
 import DashboardDailyActivityBody from "./dashboardDailyActivityBody/DashboardDailyActivityBody";
 
-export default function DashboardDailyActivity() {
+/**
+ * Affiche le l'activité quotidienne de l'utilisateur
+ */
+export default function DashboardDailyActivity(): React.ReactElement {
   const { data, isLoading, error } = useGetUserActivity(12);
 
   const caloriesNormalizationValue: number = 5;
@@ -30,7 +33,7 @@ export default function DashboardDailyActivity() {
       const max = Math.max(...sessionValues) + 1;
       const min = Math.min(...sessionValues);
 
-      return { min: min > 0 ? min - 1 : min, max };
+      return { min: min >= 1 ? min - 1 : min, max };
     } else {
       return undefined;
     }

@@ -1,6 +1,6 @@
 import { UserPerformanceProps } from "../../../utils/hooks/api/user";
 
-type Props = {
+export type DashboardActivityRadarTickProps = {
   x: number;
   y: number;
   payload: {
@@ -10,13 +10,16 @@ type Props = {
   data: UserPerformanceProps;
 };
 
+/**
+ * Affiche les marques du du graphique radar
+ */
 export default function DashboardActivityRadarTick({
   x,
   y,
   payload,
   index,
   data,
-}: Props) {
+}: DashboardActivityRadarTickProps): React.ReactElement {
   const activitiesMap = {
     cardio: "Cardio",
     energy: "Energie",

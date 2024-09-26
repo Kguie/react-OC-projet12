@@ -1,4 +1,7 @@
-export default function HeaderNav() {
+/**
+ * Affiche le navigateur du header
+ */
+export default function HeaderNav(): React.ReactElement {
   return (
     <nav className="nav">
       <a className="nav__link" href="/#">

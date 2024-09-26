@@ -1,14 +1,17 @@
-type Props = {
+export type DashboardDailyActivityTooltipProps = {
   active?: boolean;
   payload?: { value: number }[];
   normalizationValue: number;
 };
 
+/**
+ * Affiche le tooltip du graphe d'activités quotidiennes
+ */
 export default function DashboardDailyActivityTooltip({
   active,
   payload,
   normalizationValue,
-}: Props) {
+}: DashboardDailyActivityTooltipProps): React.ReactElement | null {
   const isActive = active && payload?.length;
 
   if (!isActive) {

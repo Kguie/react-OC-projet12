@@ -7,10 +7,13 @@ import {
 } from "recharts";
 
 import { useGetUserPerformance } from "../../../utils/hooks/api/user";
-import Skeleton from "../../../utils/skeleton";
+import Skeleton from "../../../utils/skeleton/Skeleton";
 import DashboardActivityRadarTick from "./DashboardActivityRadarTick";
 
-export default function DashboardActivityRadar() {
+/**
+ * Affiche les performance de l'utilisateur dans le graphique radar
+ * */
+export default function DashboardActivityRadar(): React.ReactElement {
   const { data, isLoading, error } = useGetUserPerformance(12);
 
   const isUnavailable = isLoading || error || !data?.data;

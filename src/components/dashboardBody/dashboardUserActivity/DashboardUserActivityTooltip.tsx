@@ -1,18 +1,21 @@
 import { useEffect } from "react";
 
-type Props = {
+export type DashboardUserActivityTooltipProps = {
   active?: boolean;
   payload?: { value: number }[];
   label?: number;
   onSetFilterWidth: (width: string) => void;
 };
 
+/**
+ * Affiche tooltip du graphique d'activité général
+ */
 export default function DashboardUserActivityTooltip({
   active,
   payload,
   label,
   onSetFilterWidth,
-}: Props) {
+}: DashboardUserActivityTooltipProps): React.ReactElement | null {
   const isActive = active && payload?.length && label;
 
   useEffect(() => {

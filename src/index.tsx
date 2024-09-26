@@ -5,6 +5,9 @@ import reportWebVitals from "./reportWebVitals";
 import "./utils/style/sass/main.scss";
 import App from "./App";
 
+/**
+ * Point d'entrée
+ */
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

@@ -3,7 +3,10 @@ import bike from "../../assets/icons/bike.svg";
 import swim from "../../assets/icons/swim.svg";
 import workout from "../../assets/icons/workout.svg";
 
-export default function Aside() {
+/**
+ * Affiche la barre latérale de la page
+ */
+export default function Aside(): React.ReactElement {
   const buttonsLabel = [yoga, swim, bike, workout];
 
   return (

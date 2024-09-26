@@ -2,13 +2,16 @@ import { RadialBar, RadialBarChart, ResponsiveContainer } from "recharts";
 import { useMemo } from "react";
 
 import { DashboardUserProps } from "../../../utils/hooks/api/user";
-import Skeleton from "../../../utils/skeleton";
+import Skeleton from "../../../utils/skeleton/Skeleton";
 
+/**
+ * Affiche le score de l'utilisateur
+ */
 export default function DashboardScore({
   userData,
   isLoading,
   error,
-}: DashboardUserProps) {
+}: DashboardUserProps): React.ReactElement {
   const isUnavailable = isLoading || error || !userData?.todayScore;
 
   const userScore = useMemo(

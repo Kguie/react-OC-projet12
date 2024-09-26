@@ -2,10 +2,13 @@ import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 import { useState } from "react";
 
 import { useGetUserAverageSessions } from "../../../utils/hooks/api/user";
-import Skeleton from "../../../utils/skeleton";
+import Skeleton from "../../../utils/skeleton/Skeleton";
 import DashboardUserActivityTooltip from "./DashboardUserActivityTooltip";
 
-export default function DashboardUserActivity() {
+/**
+ * Affiche activité générale de l'utilisateur avec graphique
+ */
+export default function DashboardUserActivity(): React.ReactElement {
   const { data, isLoading, error } = useGetUserAverageSessions(12);
 
   const [filterWidth, setFilterWidth] = useState<string>("0px");

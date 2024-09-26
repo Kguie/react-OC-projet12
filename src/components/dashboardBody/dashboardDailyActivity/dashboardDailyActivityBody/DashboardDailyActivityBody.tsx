@@ -8,10 +8,10 @@ import {
   YAxis,
 } from "recharts";
 
-import Skeleton from "../../../../utils/skeleton";
+import Skeleton from "../../../../utils/skeleton/Skeleton";
 import DashboardDailyActivityTooltip from "../dashboardDailyActivityTooltip/DashboardDailyActivityTooltip";
 
-type Props = {
+export type DashboardDailyActivityBodyProps = {
   isUnavailable: boolean;
   lastDailySessions:
     | {
@@ -27,12 +27,15 @@ type Props = {
   };
 };
 
+/**
+ * Affiche le graphique à bar des activités quotidiennes
+ */
 export default function DashboardDailyActivityBody({
   isUnavailable,
   lastDailySessions,
   yAxisLimits,
   caloriesNormalizationValue,
-}: Props) {
+}: DashboardDailyActivityBodyProps): React.ReactElement {
   const barRadius: number | [number, number, number, number] | undefined = [
     3, 3, 0, 0,
   ];

@@ -5,11 +5,14 @@ import DashboardDailyActivity from "./dashboardDailyActivity/DashboardDailyActiv
 import DashboardScore from "./dashboardScore/DashboardScore";
 import DashboardUserActivity from "./dashboardUserActivity/DashboardUserActivity";
 
+/**
+ * Affiche la le corps de la page avec tous les graphiques
+ */
 export default function DashboardBody({
   userData,
   isLoading,
   error,
-}: DashboardUserProps) {
+}: DashboardUserProps): React.ReactElement {
   return (
     <div className="dashboard-body">
       <div className="dashboard-body__main">

@@ -3,7 +3,11 @@ import DashboardBody from "../../components/dashboardBody/DashboardBody";
 import DashboardHead from "../../components/dashboardHead/DashboardHead";
 import { useGetUser } from "../../utils/hooks/api/user";
 
-export default function Dashboard() {
+/***
+ * Affiche la page du tableau de bord *
+ * @returns {React.ReactElement}
+ */
+export default function Dashboard(): React.ReactElement {
   const { data, isLoading, error } = useGetUser(12);
 
   return (
