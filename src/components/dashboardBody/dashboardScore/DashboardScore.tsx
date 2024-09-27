@@ -12,14 +12,19 @@ export default function DashboardScore({
   isLoading,
   error,
 }: DashboardUserProps): React.ReactElement {
-  const isUnavailable = isLoading || error || !userData?.todayScore;
+  const isUnavailable =
+    isLoading || error || (!userData?.todayScore && !userData?.score);
+
+  const userScoreValue = userData?.todayScore || userData?.score;
+
+  const validScore = typeof userScoreValue === "number" ? userScoreValue : 0;
 
   const userScore = useMemo(
     () => [
       { score: 1, fill: "#ffffff" },
-      { score: userData?.todayScore || 0, fill: "#FF0000" },
+      { score: validScore, fill: "#FF0000" },
     ],
-    [userData]
+    [validScore]
   );
 
   if (isUnavailable) {
@@ -35,9 +40,7 @@ export default function DashboardScore({
       <div className="dashboard-score__wrapper">
         <p className="dashboard-score__title">Score</p>
         <div className="dashboard-score__center">
-          <p className="dashboard-score__center__number">
-            {userData.todayScore * 100}%
-          </p>
+          <p className="dashboard-score__center__number">{validScore * 100}%</p>
           <p className="dashboard-score__center__legend">de votre objectif</p>
         </div>
         <ResponsiveContainer width={"100%"} height={"100%"}>

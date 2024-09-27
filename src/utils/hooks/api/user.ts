@@ -9,7 +9,8 @@ export type DashboardUserProps = {
 export type UserProps = {
   id: number;
   userInfos: { firstName: string; lastName: string; age: number };
-  todayScore: number;
+  todayScore?: number;
+  score?: number;
   keyData: {
     calorieCount: number;
     carbohydrateCount: number;
