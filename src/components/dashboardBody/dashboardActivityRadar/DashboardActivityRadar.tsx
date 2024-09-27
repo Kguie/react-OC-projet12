@@ -35,8 +35,8 @@ export default function DashboardActivityRadar(): React.ReactElement {
       </div>
       <div className="dashboard-activity-radar__ticks dashboard-activity-radar__ticks--vertical dashboard-activity-radar__ticks--vertical--right">
         <div className="dashboard-activity-radar__ticks--vertical__wrapper">
-          <p>Force</p>
           <p>Vitesse</p>
+          <p>Force</p>
         </div>
       </div>
       <ResponsiveContainer width={"75%"} height={"95%"}>
