@@ -21,7 +21,7 @@ export default function DashboardScore({
 
   const userScore = useMemo(
     () => [
-      { score: 1, fill: "#ffffff" },
+      { score: 1, fill: "#ffffff" }, //barre de référence
       { score: validScore, fill: "#FF0000" },
     ],
     [validScore]
