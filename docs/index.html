@@ -1,0 +1,84 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>sportsee - v0.1.0</title><meta name="description" content="Documentation for sportsee"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">sportsee - v0.1.0</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>sportsee - v0.1.0</h2></div><div class="tsd-panel tsd-typography"><a id="md:sportsee" class="tsd-anchor"></a><h1 class="tsd-anchor-link">SportSee<a href="#md:sportsee" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>Ce projet correspond au projet 12 de la formation développeur d'applications JS React de OPENCLASSROOMS.</p>
+<a id="md:table-des-matières" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Table des Matières<a href="#md:table-des-matières" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><a href="#md:introduction">Introduction</a></li>
+<li><a href="#md:installation-et-utilisation">Installation et utilisation</a></li>
+<li><a href="#md:documentation">Documentation</a></li>
+<li><a href="#md:structure-du-projet">Structure du Projet</a></li>
+<li><a href="#md:auteurs">Auteurs</a></li>
+<li><a href="#md:outils-et-contraintes-techniques">Outils et contraintes techniques</a></li>
+</ul>
+<a id="md:introduction" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Introduction<a href="#md:introduction" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>L'objectif ici est de démarrer le projet React et développer la page de profil de SportSee, les composants React, les graphiques, en suivant les maquettes Figma (<a href="https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1" target="_blank" class="external">https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1</a>).</li>
+</ul>
+<a id="md:installation-et-utilisation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Installation et utilisation<a href="#md:installation-et-utilisation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>Installation des dépendances : Cloner ce repository et lancer <code>yarn install</code> pour installer les dépendances puis démarrer avec <code>yarn start</code>.</li>
+</ul>
+<a id="md:documentation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Documentation<a href="#md:documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>Documentation disponible, réalisée avec Typedoc. Pour y accéder, installer typedoc <code>yarn add typedoc</code>, puis utiliser <code>npx typedoc</code> pour générer la documentation. Celle ci sera disponible dans le fichier '/docs', lancer le html présent avec live-server pour la consulter.</li>
+</ul>
+<a id="md:structure-du-projet" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Structure du Projet<a href="#md:structure-du-projet" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>└──  src</li>
+<li>
+<pre><code>     ├── assets          # Contient les images
+</code></pre>
+</li>
+<li>
+<pre><code>     │     └── icons/    # Contient les icônes au format svg
+</code></pre>
+</li>
+<li>
+<pre><code>     ├── components      # Contient les components
+</code></pre>
+</li>
+<li>
+<pre><code>     ├── pages           # Contient les pages
+</code></pre>
+</li>
+<li>
+<pre><code>     ├── utils           # Contient les utilitaires
+</code></pre>
+</li>
+<li>
+<pre><code>     │     ├── hooks/    # Contient les hooks
+</code></pre>
+</li>
+<li>
+<pre><code>     │     ├── skeleton/ # Contient le skeleton
+</code></pre>
+</li>
+<li>
+<pre><code>     │     └── style/    # Contient les fichiers sass
+</code></pre>
+</li>
+<li>
+<pre><code>     └── index.tsx       # Entrée
+</code></pre>
+</li>
+</ul>
+<a id="md:auteurs" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Auteurs<a href="#md:auteurs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><a href="https://github.com/Kguie/" target="_blank" class="external">GUIEBA Kévin</a></li>
+</ul>
+<a id="md:outils-et-contraintes-techniques" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Outils et contraintes techniques<a href="#md:outils-et-contraintes-techniques" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>
+<p>Create React App.</p>
+</li>
+<li>
+<p>Découpage en composants modulaires et réutilisables .</p>
+</li>
+<li>
+<p>Utiliser D3 ou Recharts pour les graphiques.</p>
+</li>
+<li>
+<p>Le projet doit être lisible sur les écrans d’au moins 1024 par 780 pixels.</p>
+</li>
+<li>
+<p>Utiliser Fetch ou Axios pour réaliser les calls API.</p>
+</li>
+<li>
+<p>Réaliser les calls en dehors des composants React.</p>
+</li>
+<li>
+<p>Documenter le projet.</p>
+</li>
+</ul>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:sportsee"><span>Sport<wbr/>See</span></a><ul><li><a href="#md:table-des-matières"><span>Table des <wbr/>Matières</span></a></li><li><a href="#md:introduction"><span>Introduction</span></a></li><li><a href="#md:installation-et-utilisation"><span>Installation et utilisation</span></a></li><li><a href="#md:documentation"><span>Documentation</span></a></li><li><a href="#md:structure-du-projet"><span>Structure du <wbr/>Projet</span></a></li><li><a href="#md:auteurs"><span>Auteurs</span></a></li><li><ul><li><a href="#md:outils-et-contraintes-techniques"><span>Outils et contraintes techniques</span></a></li></ul></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>sportsee - v0.1.0</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>
