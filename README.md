@@ -21,27 +21,32 @@
 ## Installation et utilisation
 
 - Installation des dépendances : Cloner ce repository et lancer `yarn install` pour installer les dépendances puis démarrer avec `yarn start`.
+- `yarn build` construit l'application pour la production dans le dossier `build`.\
+- `yarn eject` supprimera la dépendance de build unique de votre projet. 
 
 
 ## Documentation
 
-- Documentation disponible, réalisée avec Typedoc. Pour y accéder, installer typedoc `yarn add typedoc`, puis utiliser `npx typedoc` pour générer la documentation. Celle ci sera disponible dans le fichier '/docs', lancer le html présent avec live-server pour la consulter.
-
+- Disponible en HTML dans /docs.
 
 ## Structure du Projet
 
-
--    └──  src
--          ├── assets          # Contient les images
--          │     └── icons/    # Contient les icônes au format svg
--          ├── components      # Contient les components
--          ├── pages           # Contient les pages
--          ├── utils           # Contient les utilitaires
--          │     ├── hooks/    # Contient les hooks
--          │     ├── skeleton/ # Contient le skeleton
--          │     └── style/    # Contient les fichiers sass
--          └── index.tsx       # Entrée
-
+src/
+├── assets/              # Ressources statiques telles que les images et icônes
+│   ├── icons/           # Icônes SVG réutilisables dans les composants
+│   └── ...              # Autres ressources comme les polices, logos, etc.
+│
+├── components/          # Composants réutilisables à travers l'application
+│
+├── pages/               # Pages principales de l'application (correspond à chaque route)   
+│
+├── utils/               # Fonctions utilitaires et helpers
+│   ├── hooks/           # Hooks personnalisés pour gérer l'état ou les effets
+│   ├── skeleton/        # Squelettes de chargement ou placeholders
+│   └── style/  
+│
+├── index.tsx            # Point d'entrée de l'application React
+└── App.tsx              # Composant racine définissant la structure de l'application
 
 ## Auteurs
 
