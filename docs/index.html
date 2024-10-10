@@ -12,48 +12,29 @@
 </ul>
 <a id="md:installation-et-utilisation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Installation et utilisation<a href="#md:installation-et-utilisation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
 <li>Installation des dépendances : Cloner ce repository et lancer <code>yarn install</code> pour installer les dépendances puis démarrer avec <code>yarn start</code>.</li>
+<li><code>yarn build</code> construit l'application pour la production dans le dossier <code>build</code>.\</li>
+<li><code>yarn eject</code> supprimera la dépendance de build unique de votre projet.</li>
 </ul>
 <a id="md:documentation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Documentation<a href="#md:documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
-<li>Documentation disponible, réalisée avec Typedoc. Pour y accéder, installer typedoc <code>yarn add typedoc</code>, puis utiliser <code>npx typedoc</code> pour générer la documentation. Celle ci sera disponible dans le fichier '/docs', lancer le html présent avec live-server pour la consulter.</li>
+<li>Disponible en HTML dans /docs.</li>
 </ul>
 <a id="md:structure-du-projet" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Structure du Projet<a href="#md:structure-du-projet" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
-<li>└──  src</li>
-<li>
-<pre><code>     ├── assets          # Contient les images
-</code></pre>
-</li>
-<li>
-<pre><code>     │     └── icons/    # Contient les icônes au format svg
-</code></pre>
-</li>
-<li>
-<pre><code>     ├── components      # Contient les components
-</code></pre>
-</li>
-<li>
-<pre><code>     ├── pages           # Contient les pages
-</code></pre>
-</li>
-<li>
-<pre><code>     ├── utils           # Contient les utilitaires
-</code></pre>
-</li>
-<li>
-<pre><code>     │     ├── hooks/    # Contient les hooks
-</code></pre>
-</li>
-<li>
-<pre><code>     │     ├── skeleton/ # Contient le skeleton
-</code></pre>
-</li>
-<li>
-<pre><code>     │     └── style/    # Contient les fichiers sass
-</code></pre>
-</li>
-<li>
-<pre><code>     └── index.tsx       # Entrée
-</code></pre>
-</li>
+<li>src/</li>
+<li>├── assets/              # Ressources statiques telles que les images et icônes</li>
+<li>│   ├── icons/           # Icônes SVG réutilisables dans les composants</li>
+<li>│   └── ...              # Autres ressources comme les polices, logos, etc.</li>
+<li>│</li>
+<li>├── components/          # Composants réutilisables à travers l'application</li>
+<li>│</li>
+<li>├── pages/               # Pages principales de l'application (correspond à chaque route)</li>
+<li>│</li>
+<li>├── utils/               # Fonctions utilitaires et helpers</li>
+<li>│   ├── hooks/           # Hooks personnalisés pour gérer l'état ou les effets</li>
+<li>│   ├── skeleton/        # Squelettes de chargement ou placeholders</li>
+<li>│   └── style/</li>
+<li>│</li>
+<li>├── index.tsx            # Point d'entrée de l'application React</li>
+<li>└── App.tsx              # Composant racine définissant la structure de l'application</li>
 </ul>
 <a id="md:auteurs" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Auteurs<a href="#md:auteurs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
 <li><a href="https://github.com/Kguie/" target="_blank" class="external">GUIEBA Kévin</a></li>

@@ -31,22 +31,22 @@
 
 ## Structure du Projet
 
-src/
-├── assets/              # Ressources statiques telles que les images et icônes
-│   ├── icons/           # Icônes SVG réutilisables dans les composants
-│   └── ...              # Autres ressources comme les polices, logos, etc.
-│
-├── components/          # Composants réutilisables à travers l'application
-│
-├── pages/               # Pages principales de l'application (correspond à chaque route)   
-│
-├── utils/               # Fonctions utilitaires et helpers
-│   ├── hooks/           # Hooks personnalisés pour gérer l'état ou les effets
-│   ├── skeleton/        # Squelettes de chargement ou placeholders
-│   └── style/  
-│
-├── index.tsx            # Point d'entrée de l'application React
-└── App.tsx              # Composant racine définissant la structure de l'application
+- src/
+- ├── assets/              # Ressources statiques telles que les images et icônes
+- │   ├── icons/           # Icônes SVG réutilisables dans les composants
+- │   └── ...              # Autres ressources comme les polices, logos, etc.
+- │
+- ├── components/          # Composants réutilisables à travers l'application
+- │
+- ├── pages/               # Pages principales de l'application (correspond à chaque route)   
+- │
+- ├── utils/               # Fonctions utilitaires et helpers
+- │   ├── hooks/           # Hooks personnalisés pour gérer l'état ou les effets
+- │   ├── skeleton/        # Squelettes de chargement ou placeholders
+- │   └── style/  
+- │
+- ├── index.tsx            # Point d'entrée de l'application React
+- └── App.tsx              # Composant racine définissant la structure de l'application
 
 ## Auteurs
 
